@@ -115,7 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="arrayList.h" />
     <ClInclude Include="linearList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arrayList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
