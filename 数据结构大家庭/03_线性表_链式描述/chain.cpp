@@ -1,4 +1,5 @@
 #include "chain.h"
+#include "../01_参数异常类/illegalParameterValue.h"
 #include <iostream>
 using std::endl;
 using std::ostream;
@@ -8,7 +9,7 @@ chain<T>::chain(int initialCapacity)
 {
 	if (initialCapacity < 1)
 	{
-		char * smsg = "Initial Capacity =  Must be > 0";
+		const char * smsg = "Initial Capacity =  Must be > 0";
 		throw illegalParameterValue(smsg);
 	}
 	firstNode = NULL;
@@ -58,7 +59,7 @@ void chain<T>::checkIndex(int theIndex) const
 	//索引在0 ~ listSize - 1 之间
 	if (theIndex < 0 || theIndex >= listSize)
 	{
-		char * msg = "Index over range";
+		const char * msg = "Index over range";
 		throw illegalParameterValue(msg);
 	}
 }
@@ -133,7 +134,7 @@ void chain<T>::insert(int theIndex, const T & theElement)
 {
 	if (theIndex < 0 || theIndex > listSize)
 	{
-		char * msg = "index over the range";
+		const char * msg = "index over the range";
 		throw illegalParameterValue(msg);
 	}
 	if (theIndex == 0)
@@ -158,7 +159,7 @@ void chain<T>::output(ostream &out) const
 {
 	for (chainNode<T> * currentNode = firstNode; currentNode != NULL; currentNode = currentNode->next)
 	{
-		out << currentNode.element << "  ";
+		out << currentNode->element << "  ";
 	}
 	out << endl;
 }
