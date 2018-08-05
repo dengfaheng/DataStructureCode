@@ -1,6 +1,7 @@
 #include "chain.h"
 #include "../01_参数异常类/illegalParameterValue.h"
 #include <iostream>
+#include <iomanip>
 using std::endl;
 using std::ostream;
 
@@ -159,7 +160,7 @@ void chain<T>::output(ostream &out) const
 {
 	for (chainNode<T> * currentNode = firstNode; currentNode != NULL; currentNode = currentNode->next)
 	{
-		out << currentNode->element << "  ";
+		out << std::setw(4) <<currentNode->element << "  ";
 	}
 	out << endl;
 }

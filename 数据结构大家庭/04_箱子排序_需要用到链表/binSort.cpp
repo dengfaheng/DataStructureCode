@@ -62,15 +62,15 @@ int main()
 	srand(time(0));
 	chain<studentRecord> students;
 	studentRecord someOne;
-	for (int i = 0; i < 26; i++)
+	for (int i = 0; i < 100; i++)
 	{
-		char Name = 'A' + i;
+		char Name = i % 26 + 'A';
 		someOne.name = Name;
-		someOne.score = rand() % 11;
+		someOne.score = rand() % 101;
 		students.insert(0, someOne);
 	}
 
-	binSort(students, 10);
+	binSort(students, 100);
 	cout << "  ";
 	students.output(cout);
 
