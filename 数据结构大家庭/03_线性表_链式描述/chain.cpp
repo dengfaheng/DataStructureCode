@@ -165,6 +165,30 @@ void chain<T>::output(ostream &out) const
 	out << endl;
 }
 
+//链表反转
+template<typename T>
+void chain<T>::reverse()
+{
+	chainNode<T> *p1, *p2, *p3;
+	p1 = p2 = p3 = NULL; //防止野指针
+	p1 = firstNode;
+
+	if (p1 != NULL)
+	{
+		p2 = p1->next;
+		while (p2 != NULL)
+		{
+			p3 = p2->next;  //布局第三个点
+			p2->next = p1;  //指针转向
+			p1 = p2;        //循环移动
+			p2 = p3;
+		}
+		firstNode->next = NULL;
+		firstNode = p1;
+	}
+	
+}
+
 //重载<<
 template<typename T>
 ostream & operator<<(ostream & out, const chain<T> &x)

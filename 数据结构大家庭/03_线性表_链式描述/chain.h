@@ -29,6 +29,9 @@ public:
 	void erase(int theIndex);
 	void insert(int theIndex, const T& theElement);
 	void output(ostream & out) const;
+	void reverse();
+	void insertFromHead(const T & theElement) { insert(0, theElement); }
+	void insertFromBack(const T & theElement) { insert(listSize, theElement); }
 
 protected:
 	void checkIndex(int theIndex) const;
