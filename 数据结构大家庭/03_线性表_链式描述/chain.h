@@ -32,6 +32,7 @@ public:
 	void reverse();
 	void insertFromHead(const T & theElement) { insert(0, theElement); }
 	void insertFromBack(const T & theElement) { insert(listSize, theElement); }
+	void clear();
 
 protected:
 	void checkIndex(int theIndex) const;

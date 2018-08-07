@@ -78,7 +78,6 @@ T & chain<T>::get(int theIndex) const
 	}
 
 	return  currentNode->element;
-
 }
 
 template<typename T>
@@ -187,6 +186,15 @@ void chain<T>::reverse()
 		firstNode = p1;
 	}
 	
+}
+//清理链表
+template<typename T>
+void chain<T>::clear()
+{
+	while (!empty())
+	{
+		erase(0);
+	}
 }
 
 //重载<<

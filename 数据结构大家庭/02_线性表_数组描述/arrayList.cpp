@@ -69,10 +69,10 @@ void arrayList<T>::erase(int theIndex)
 
 	element[--listSize].~T();
 
-	if (listSize < arrayLength / 4)
+	if ((listSize < arrayLength / 4) && (arrayLength > 10))
 	{
-		changeLength1D(element, listSize, listSize / 2);
-		listSize /= 2;
+		changeLength1D(element, arrayLength, arrayLength / 2);
+		arrayLength /= 2;
 	}
 
 }
