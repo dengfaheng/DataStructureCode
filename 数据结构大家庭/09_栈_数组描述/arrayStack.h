@@ -1,8 +1,9 @@
 #pragma once
-#include "../01_参数异常类/illegalParameterValue.h"
-#include "stackEmpty.h"
+
 #include <stack>
 #include <algorithm>
+#include "../01_参数异常类/illegalParameterValue.h"
+#include "stackEmpty.h"
 using std::stack;
 
 template<typename T>
@@ -30,10 +31,12 @@ private:
 
 };
 
+inline int myMin(int a, int b){ return (a<b ? a : b); }
+
 template<typename T>
 void arrayStack<T>::changeLength1D(T * theElement, int oldSize, int newSize)
 {
-	int theSize = min(oldSize, newSize);
+	int theSize = myMin(oldSize, newSize);
 	T * newElememt = new T[newSize];
 	std::copy(theElement, theElement + theSize, newElememt);
 	delete[] theElement;
