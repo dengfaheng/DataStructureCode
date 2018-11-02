@@ -4,8 +4,6 @@
 #include <windows.h>
 #include<stack>
 
-#include "../09_Õ»_Êı×éÃèÊö/arrayStack.h"
-
 using std::cout;
 using std::cin;
 using std::endl;
@@ -64,7 +62,7 @@ int main()
 void welcome()
 {
 	cout << "welcome to RAT IN MAZE" << endl;
-	//system("pause");
+	system("pause");
 	system("cls");
 }
 
