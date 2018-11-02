@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_队列_抽象类", "17_�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_队列_数组描述", "18_队列_数组描述\18_队列_数组描述.vcxproj", "{98D09F47-0CB3-4593-844E-5F55B087D2A8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_队列_链表描述", "19_队列_链表描述\19_队列_链表描述.vcxproj", "{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{98D09F47-0CB3-4593-844E-5F55B087D2A8}.Release|x64.Build.0 = Release|x64
 		{98D09F47-0CB3-4593-844E-5F55B087D2A8}.Release|x86.ActiveCfg = Release|Win32
 		{98D09F47-0CB3-4593-844E-5F55B087D2A8}.Release|x86.Build.0 = Release|Win32
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Debug|x64.ActiveCfg = Debug|x64
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Debug|x64.Build.0 = Debug|x64
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Debug|x86.ActiveCfg = Debug|Win32
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Debug|x86.Build.0 = Debug|Win32
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Release|x64.ActiveCfg = Release|x64
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Release|x64.Build.0 = Release|x64
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Release|x86.ActiveCfg = Release|Win32
+		{811E5EDA-9170-452D-8E1A-CFE30D18FAFC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
